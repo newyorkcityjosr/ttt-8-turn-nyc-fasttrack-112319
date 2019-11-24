@@ -14,5 +14,7 @@ end
 end
 end
 def input_to_index(user_input)
-  user_input.to_i -1
+  index = user_input.to_i
+  index -= 1
+  return index
 end
