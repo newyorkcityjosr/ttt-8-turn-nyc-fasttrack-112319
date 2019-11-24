@@ -6,11 +6,13 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 def vaild_move?(board, index)
-  if index.between?(0,8)
-    if !position_taken?(board, index)
+  if (index.between?(0,8) == true && (!position_taken?(board, index) == false)
 return true
 else
   return false
 end
 end
+end
+def input_to_index(user_input)
+  user_input.to_i -1 
 end
